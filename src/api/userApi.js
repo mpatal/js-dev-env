@@ -12,6 +12,7 @@ export function deleteUser(id) {
 }
 
 function get(url) {
+    console.log(baseUrl); //eslint-disable-line no-console
     return fetch(baseUrl + url).then(onSuccess, onError);
 }
 
